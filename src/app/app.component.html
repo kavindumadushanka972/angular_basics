@@ -7,7 +7,7 @@
     <input type="password" ngModel name="password" placeholder="Enter Password"><br>
     <input type="email" ngModel name="email" placeholder="Enter Email"><br>
     <br>
-    <button>Submit</button>
+    <button class="btn btn-danger">Submit</button>
 
 </form>
 
@@ -26,7 +26,7 @@
 
 <app-student-list></app-student-list>
 
-<button (click)="getName('Kavindu')">Click Here</button>
+<button class="btn btn-primary" (click)="getName('Kavindu')">Click Here</button>
 
 <app-login></app-login>
 
@@ -46,15 +46,15 @@
 <hr>
 <input type="text" #box placeholder="Enter Name" name="username">
 
-<button (click)="getValue(box.value)">click me</button>
+<button class="btn btn-primary" (click)="getValue(box.value)">click me</button>
 
 <p>Box value is: {{displayVal}}</p>
 
 <hr>
 
-<button (click)="decreaseCounter()">--</button>
+<button class="btn btn-danger" (click)="decreaseCounter()">--</button>
 <p>Count: {{count}}</p>
-<button (click)="increaseCounter()">++</button>
+<button class="btn btn-danger" (click)="increaseCounter()">++</button>
 
 <hr>
 
@@ -119,5 +119,5 @@
 <h3>Toggle Element</h3>
 
 <h5 *ngIf="display">Heading Tag</h5>
-<button (click)="toggle()">toggle</button>
+<button class="btn btn-primary" (click)="toggle()">toggle</button>
 
