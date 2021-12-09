@@ -1,6 +1,18 @@
+<app-header></app-header>
+
 <h1 class="heading">Hello Angular {{data}} </h1>
 
-<button (click)="getName('Kavindu')">click me</button>
+<form #basicForm="ngForm" (submit)="getFormData(basicForm.value)">
+    <input type="text" ngModel name="user" placeholder="Enter user name"><br>
+    <input type="password" ngModel name="password" placeholder="Enter Password"><br>
+    <input type="email" ngModel name="email" placeholder="Enter Email"><br>
+    <br>
+    <button>Submit</button>
+
+</form>
+
+<hr>
+
 
 <app-login></app-login>
 
@@ -102,3 +114,10 @@
 <hr>
 
 <h1 [style.color]="color">Dynamic style</h1>
+
+<hr>
+<h3>Toggle Element</h3>
+
+<h5 *ngIf="display">Heading Tag</h5>
+<button (click)="toggle()">toggle</button>
+

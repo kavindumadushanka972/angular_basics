@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms'
 
 @Component({
   selector: 'app-root',
@@ -44,5 +45,15 @@ export class AppComponent {
     {name: 'Peter', job: 'Doctor', accounts: ['gmail', 'youtube']},
     {name: 'Sony', job: 'Lawyer', accounts: ['linkedin', 'instagram']}
   ]
+
+  getFormData(data: NgForm){
+    console.log(data)
+  }
+
+  display = true
+
+  toggle(){
+    this.display = !this.display
+  }
 
 }
