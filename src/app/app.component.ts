@@ -35,5 +35,14 @@ export class AppComponent {
 
   name = "Peter"
   show = "yes"
-  color = "green"
+  color = "red"
+  users = ['Anil', 'Peter', 'Sony', 'Sam']
+  jobs = ['Engineer', 'Doctor', 'Lawyer', 'Businessman']
+
+  userDetails =[
+    {name: 'Anil', job: 'Engineer', accounts: ['facebook', 'yahoo']},
+    {name: 'Peter', job: 'Doctor', accounts: ['gmail', 'youtube']},
+    {name: 'Sony', job: 'Lawyer', accounts: ['linkedin', 'instagram']}
+  ]
+
 }

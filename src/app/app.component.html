@@ -81,3 +81,24 @@
     <h1 *ngSwitchCase="'blue'" style="color: blue;">Blue Color</h1>
     <h1 *ngSwitchDefault style="color: green;">Green Color</h1>
 </div>
+
+<hr>
+<h1>Loop in Angular</h1>
+
+<p *ngFor="let data of users">{{data}}</p>
+
+<p *ngFor="let item of userDetails">name: {{item.name}} | job: {{item.job}}</p>
+
+<h2>Nested Loop</h2>
+<ul *ngFor="let data of userDetails">
+    <li>{{data.name}}</li>
+    <li>{{data.job}}</li>
+
+    <ul *ngFor="let account of data.accounts">
+        <li>{{account}}</li>
+    </ul>
+</ul>
+
+<hr>
+
+<h1 [style.color]="color">Dynamic style</h1>
